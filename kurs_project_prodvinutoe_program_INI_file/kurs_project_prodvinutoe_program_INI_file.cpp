@@ -5,7 +5,7 @@
 int main() {
 	try {
 	ini_parser parser("ini.ini");
-	auto value = parser.get_value <std::string> ("topsecret.server.com.ForwardX11");
+	auto value = parser.get_value <long double> ("DEFAULT.Compression");
 	std::cout  << value << std::endl;
 	
 	for (auto i : parser.errors) {
